@@ -1,0 +1,44 @@
+[
+  {
+    "page_label": "Sample Form",
+    "fields": [
+      {
+        "field_id": "name",
+        "field_label": "Name",
+        "field_mandatory": "yes",
+        "field_placeholder": "Enter name",
+        "field_type": "text",
+        "field_value": ""
+      },
+      {
+        "field_id": "email",
+        "field_label": "Email",
+        "field_mandatory": "yes",
+        "field_placeholder": "Enter email",
+        "field_type": "text"
+      },
+      {
+        "field_id": "employment",
+        "field_label": "Employment Type",
+        "field_value": "Full-Time",
+        "field_mandatory": "yes",
+        "field_options": [
+          {
+            "option_label": "Full-Time"
+          },
+          {
+            "option_label": "Part-Time"
+          },
+          {
+            "option_label": "Contract"
+          },
+          {
+            "option_label": "Freelance"
+          }
+        ],
+        "field_type": "select"
+      }
+    ],
+    "function": "(x) => alert(x)"
+  }
+]
