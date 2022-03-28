@@ -18,6 +18,12 @@
         "field_type": "text"
       },
       {
+        "functionDefinition": {
+          "functionTrigger": "Contract",
+          "functionType": "populate",
+          "targetField": "name",
+          "targetFieldValue": "TEST"
+        },
         "field_id": "employment",
         "field_label": "Employment Type",
         "field_value": "Full-Time",
@@ -37,8 +43,37 @@
           }
         ],
         "field_type": "select"
+      },
+      {
+        "functionDefinition": {
+          "functionTrigger": "Green Card",
+          "functionType": "exposeField",
+          "newFieldDefinition": {
+            "newField_id": "card_number",
+            "newField_label": "Green Card Number",
+            "newField_mandatory": "yes",
+            "newField_placeholder": "Enter Green Card Serial Number",
+            "newField_type": "text",
+            "newField_value": ""
+          }
+        },
+        "field_id": "immigration",
+        "field_label": "Immigration Status",
+        "field_value": "Citizenship",
+        "field_mandatory": "yes",
+        "field_options": [
+          {
+            "option_label": "Visa"
+          },
+          {
+            "option_label": "Green Card"
+          },
+          {
+            "option_label": "Citizenship"
+          }
+        ],
+        "field_type": "select"
       }
-    ],
-    "function": "(x) => alert(x)"
+    ]
   }
 ]

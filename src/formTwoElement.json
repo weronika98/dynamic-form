@@ -18,13 +18,19 @@
         "field_type": "text"
       },
       {
+        "functionDefinition": {
+          "functionTrigger": "Cats",
+          "functionType": "populate",
+          "targetField": "english_name",
+          "targetFieldValue": "USER ALLERGIC TO CATS"
+        },
         "field_id": "allergies",
         "field_label": "Known Allergies",
         "field_value": "cats",
         "field_mandatory": "yes",
         "field_options": [
           {
-            "option_label": "Dust"
+            "option_label": "Cats"
           },
           {
             "option_label": "Fruit"
